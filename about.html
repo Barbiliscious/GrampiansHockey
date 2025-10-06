@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Grampians Hockey Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .ghc-green {
+            background-color: #1D5D1D;
+        }
+        .club-values::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(29, 93, 29, 0.85);
+            z-index: -1;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 24px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #1D5D1D;
+            z-index: 1;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 12px;
+            width: 2px;
+            background-color: #1D5D1D;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="font-sans" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <!-- Header -->
+    <header class="ghc-green text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex flex-wrap items-center justify-between py-3">
+            <div class="flex items-center">
+                <img src="http://static.photos/sport/200x200/12" alt="Grampians Hockey Club Logo" class="h-16 w-16 rounded-full border-2 border-white mr-3">
+                <div>
+                    <h1 class="text-2xl font-bold">Grampians Hockey Club</h1>
+                    <p class="text-xs text-green-200">Community hockey in Western Victoria</p>
+                </div>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu h-8 w-8">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="main-nav" class="hidden md:flex w-full md:w-auto py-4 md:py-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 w-full">
+                    <li><a href="index.html" class="text-white hover:text-green-300 font-medium py-2 px-4 rounded hover:bg-green-900 transition">Home</a></li>
+                    <li><a href="about.html" class="bg-green-800 text-white font-medium py-2 px-4 rounded hover:bg-green-900 transition">About</a></li>
+                    <li><a href="teams.html" class="text-white hover:text-green-300 font-medium py-2 px-4 rounded hover:bg-green-900 transition">Teams</a></li>
+                    <li><a href="socials.html" class="text-white hover:text-green-300 font-medium py-2 px-4 rounded hover:bg-green-900 transition">Socials</a></li>
+                    <li><a href="get-involved.html" class="text-white hover:text-green-300 font-medium py-2 px-4 rounded hover:bg-green-900 transition">Get Involved</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-green-300 font-medium py-2 px-4 rounded hover:bg-green-900 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="relative" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('http://static.photos/sport/1200x630/25') center/cover;">
+        <div class="container mx-auto px-4 py-24 text-white text-center">
+            <h1 class="text-4xl font-bold mb-6">Our Club Story</h1>
+            <p class="text-xl max-w-3xl mx-auto">Celebrating decades of hockey excellence and community spirit in the Grampians region</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Welcome to Grampians Hockey</h2>
+                <p class="text-gray-700 mb-6 text-lg">
+                    Since our founding in the 1970s, Grampians Hockey Club has been the heart of hockey in our region. What started as a small group of hockey enthusiasts has grown into a vibrant community club with teams across junior, senior, and masters competitions.
+                </p>
+                <p class="text-gray-700 mb-8">
+                    Our club prides itself on creating a welcoming environment for players of all ages and skill levels. Whether you're looking to compete at the highest level, learn the game, or stay active in a friendly atmosphere, you'll find a place at Grampians Hockey Club.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="text-center p-6 bg-green-50 rounded-lg shadow-sm">
+                        <div class="text-4xl font-bold text-green-700 mb-2">45+</div>
+                        <div class="font-medium">Years of History</div>
+                    </div>
+                    <div class="text-center p-6 bg-green-50 rounded-lg shadow-sm">
+                        <div class="text-4xl font-bold text-green-700 mb-2">4</div>
+                        <div class="font-medium">Competition Programs</div>
+                    </div>
+                    <div class="text-center p-6 bg-green-50 rounded-lg shadow-sm">
+                        <div class="text-4xl font-bold text-green-700 mb-2">180+</div>
+                        <div class="font-medium">Active Members</div>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 mt-10">Our Mission</h3>
+                <p class="text-gray-700 mb-8">
+                    To develop and promote hockey in the Grampians region, providing quality playing, training, and social experiences for all members while building community connections through sport.
+                </p>
+                <div class="relative mt-16">
+                    <h2 class="text-3xl font-bold text-center mb-12">Club History Timeline</h2>
+                    <div class="timeline-line relative">
+                        <div class="relative pl-12 pb-8 timeline-item">
+                            <h3 class="text-xl font-bold text-green-700">1976 - Founding Year</h3>
+                            <p class="mt-2 text-gray-700">A group of local enthusiasts establishes Grampians Hockey Club with one men's team competing in the regional competition.</p>
+                        </div>
+                        <div class="relative pl-12 pb-8 timeline-item">
+                            <h3 class="text-xl font-bold text-green-700">1983 - Women's Programme</h3>
+                            <p class="mt-2 text-gray-700">Formation of our first women's team, marking the beginning of gender equality at the club.</p>
+                        </div>
+                        <div class="relative pl-12 pb-8 timeline-item">
+                            <h3 class="text-xl font-bold text-green-700">1992 - Junior Development</h3>
+                            <p class="mt-2 text-gray-700">Launch of our junior development programme, introducing hockey to schools across the region.</p>
+                        </div>
+                        <div class="relative pl-12 pb-8 timeline-item">
+                            <h3 class="text-xl font-bold text-green-700">2005 - Home Ground</h3>
+                            <p class="mt-2 text-gray-700">Establishment of our dedicated home ground with modern hockey facilities.</p>
+                        </div>
+                        <div class="relative pl-12 pb-8 timeline-item">
+                            <h3 class="text-xl font-bold text-green-700">2015 - Expansion</h3>
+                            <p class="mt-2 text-gray-700">Club expansion adds teams to regional and metropolitan competitions.</p>
+                        </div>
+                        <div class="relative pl-12 timeline-item">
+                            <h3 class="text-xl font-bold text-green-700">Today</h3>
+                            <p class="mt-2 text-gray-700">A thriving community hub supporting players, families, and supporters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Committee</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="flip-left">
+                    <div class="bg-gray-300 h-64 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-24 w-24 text-gray-400">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">TBA</h3>
+                        <p class="text-green-600 mb-3">President</p>
+                        <p class="text-gray-600 text-sm">Long-time club leader and former state-level player</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="flip-left">
+                    <div class="bg-gray-300 h-64 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-24 w-24 text-gray-400">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">TBA</h3>
+                        <p class="text-green-600 mb-3">Vice President</p>
+                        <p class="text-gray-600 text-sm">Junior development coordinator with extensive coaching experience</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="flip-left">
+                    <div class="bg-gray-300 h-64 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user h-24 w-24 text-gray-400">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">TBA</h3>
+                        <p class="text-green-600 mb-3">Treasurer</p>
+                        <p class="text-gray-600 text-sm">Club member and finance professional focused on sustainability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="contact.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition">
+                    Contact Committee
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail ml-2 h-4 w-4 inline">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Facilities -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center">Our Facilities</h2>
+                <div class="mb-16">
+                    <div class="aspect-video bg-gray-300 mb-6 rounded-lg overflow-hidden flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image h-24 w-24 text-gray-400">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Main Hockey Field</h3>
+                    <p class="text-gray-700 mb-4">
+                        Our maintained grass field provides an exceptional playing surface for all levels of hockey, features modern lighting for evening games and training.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-sm">Lighting</span>
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-sm">Maintained Grass</span>
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-sm">New Facilities</span>
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-sm">Central Location</span>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="aspect-video bg-gray-300 mb-4 rounded-lg overflow-hidden flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image h-16 w-16 text-gray-400">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Clubrooms</h3>
+                        <p class="text-gray-700">Our shared modern clubhouse features change rooms, showers, first aid facilities, social area, and canteen.</p>
+                    </div>
+                    <div>
+                        <div class="aspect-video bg-gray-300 mb-4 rounded-lg overflow-hidden flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image h-16 w-16 text-gray-400">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Training Field</h3>
+                        <p class="text-gray-700">Adjacent grass training field with portable goals used for training sessions and junior development.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="contact.html" class="inline-block border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-bold py-3 px-6 rounded-full transition">
+                        Book Our Facilities
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar ml-2 h-4 w-4 inline">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ghc-green text-white">
+        <div class="container mx-auto px-4 pt-12 pb-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Grampians Hockey Club</h4>
+                    <p class="mb-4 text-green-100">Bringing the community together through the sport we love across the Grampians region.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/grampianshockey" target="_blank" class="text-green-200 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook h-6 w-6">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/grampianshockey" target="_blank" class="text-green-200 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram h-6 w-6">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/grampianshockey" target="_blank" class="text-green-200 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter h-6 w-6">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/grampianshockey" target="_blank" class="text-green-200 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube h-6 w-6">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-green-100 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-green-100 hover:text-white transition">About</a></li>
+                        <li><a href="teams.html" class="text-green-100 hover:text-white transition">Teams</a></li>
+                        <li><a href="contact.html" class="text-green-100 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin mr-3 mt-1 h-5 w-5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>123 Sport Street, Ararat VIC 3377</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail mr-3 h-5 w-5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>info@grampianshockey.com.au</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone mr-3 h-5 w-5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>(03) 5555 1234</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Opening Hours</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li>Monday - Friday: 9am - 5pm</li>
+                        <li>Saturday: 8am - 4pm</li>
+                        <li>Sunday: Closed</li>
+                        <li class="mt-4 italic">Field hours extend during match season</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-green-800 text-center">
+                <p class="text-green-200">© 2024 Grampians Hockey Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mainNav = document.getElementById('main-nav');
+
+            menuButton.addEventListener('click', function() {
+                mainNav.classList.toggle('hidden');
+                mainNav.classList.toggle('block');
+                if (window.feather) feather.replace();
+            });
+
+            if (window.AOS) {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true
+                });
+            }
+
+            if (window.feather) {
+                feather.replace();
+            }
+        });
+    </script>
+</body>
+</html>
